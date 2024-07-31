@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindWell - Mood Tracking</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col items-center min-h-screen">
+    <header class="bg-white w-full p-4 shadow-md text-center">
+        <h1 class="text-2xl font-bold">MindWell</h1>
+    </header>
+    <main class="flex flex-col items-center justify-center flex-grow space-y-4 mt-8">
+        <div class="w-4/5 max-w-xs p-4 bg-white rounded shadow-md text-center">
+            <h2 class="text-xl font-bold">Today's Mood</h2>
+            <div class="flex justify-around mt-4">
+                <button class="text-2xl">😃</button>
+                <button class="text-2xl">😐</button>
+                <button class="text-2xl">😞</button>
+            </div>
+        </div>
+        <div class="w-4/5 max-w-xs p-4 bg-white rounded shadow-md text-center">
+            <h2 class="text-xl font-bold">Mood History</h2>
+            <ul class="mt-2">
+                <li>Aug 1, 2024 - 😃</li>
+                <li>Jul 27, 2024 - 😐</li>
+                <li>Jul 30, 2024 - 😃</li>
+            </ul>
+        </div>
+        <div class="w-4/5 max-w-xs p-4 bg-white rounded shadow-md text-center">
+            <h2 class="text-xl font-bold">Insights & Suggestions</h2>
+            <p class="mt-2 text-gray-600">Based on your mood trends, consider practicing mindfulness exercises to improve your overall well-being.</p>
+        </div>
+    </main>
+    <nav class="bg-white w-full p-4 shadow-md flex justify-around">
+        <a href="home.html" class="text-blue-500">Home</a>
+        <a href="mood-tracking.html" class="text-gray-500">Mood</a>
+        <a href="ai-assessment.html" class="text-gray-500">Assessments</a>
+        <a href="cbt-exercise.html" class="text-gray-500">Exercises</a>
+    </nav>
+</body>
+</html>

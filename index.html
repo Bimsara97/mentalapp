@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Hardcoded credentials
+            const hardcodedEmail = 'user@example.com';
+            const hardcodedPassword = 'password123';
+
+            if (email === hardcodedEmail && password === hardcodedPassword) {
+                window.location.href = 'mood-tracking.html';
+            } else {
+                alert('Invalid email or password');
+            }
+        }
+    </script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="w-full max-w-md p-8 space-y-6 bg-white rounded shadow-md">
+        <h2 class="text-2xl font-bold text-center">Login</h2>
+        <form onsubmit="handleLogin(event)">
+            <div class="space-y-4">
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input id="email" name="email" type="email" required class="w-full p-2 mt-1 border border-gray-300 rounded shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input id="password" name="password" type="password" required class="w-full p-2 mt-1 border border-gray-300 rounded shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+            </div>
+            <div class="flex items-center justify-between mt-6">
+                <button type="submit" class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Login</button>
+                <a href="#" class="text-sm text-blue-500 hover:underline">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

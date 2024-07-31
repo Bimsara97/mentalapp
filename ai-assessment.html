@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindWell - Assessments</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col items-center min-h-screen">
+    <header class="bg-white w-full p-4 shadow-md text-center">
+        <h1 class="text-2xl font-bold">MindWell</h1>
+    </header>
+    <main class="flex flex-col items-center justify-center flex-grow space-y-4 mt-8">
+        <div class="w-4/5 max-w-xs p-4 bg-white rounded shadow-md text-center">
+            <h2 class="text-xl font-bold">Assessment Progress</h2>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+            </div>
+        </div>
+        <div class="w-4/5 max-w-xs p-4 bg-white rounded shadow-md text-center">
+            <h2 class="text-xl font-bold">Question 1:</h2>
+            <p class="mt-2 text-gray-600">How often have you felt down, depressed, or hopeless in the past two weeks?</p>
+            <form action="submit_assessment.php" method="POST">
+                <div class="mt-4 space-y-2">
+                    <label class="block">
+                        <input type="radio" name="question1" value="Not at all" class="mr-2"> Not at all
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="question1" value="Several days" class="mr-2"> Several days
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="question1" value="More than half the days" class="mr-2"> More than half the days
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="question1" value="Nearly every day" class="mr-2"> Nearly every day
+                    </label>
+                </div>
+                <button type="submit" class="w-full mt-4 px-4 py-2 font-bold text-white bg-black rounded hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500">Submit</button>
+            </form>
+        </div>
+        <div class="w-4/5 max-w-xs p-4 bg-white rounded shadow-md text-center">
+            <h2 class="text-xl font-bold">Feedback</h2>
+            <p class="mt-2 text-gray-600">Based on your responses, we suggest considering the following resources:
+                <ul class="mt-2 text-left list-disc list-inside">
+                    <li>Consider speaking with a professional counselor.</li>
+                    <li>Explore our guided meditation exercises.</li>
+                    <li>Join our online support community for additional support.</li>
+                </ul>
+            </p>
+        </div>
+    </main>
+    <nav class="bg-white w-full p-4 shadow-md flex justify-around">
+        <a href="home.html" class="text-blue-500">Home</a>
+        <a href="mood-tracking.html" class="text-gray-500">Mood</a>
+        <a href="ai-assessment.html" class="text-gray-500">Assessments</a>
+        <a href="cbt-exercise.html" class="text-gray-500">Exercises</a>
+    </nav>
+</body>
+</html>
